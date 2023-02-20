@@ -1,36 +1,33 @@
 #include <stdio.h>
 
 /**
- *main - Prints numbers between 00 to 89.
-
- * Return: Always 0 (Success)
- */
+ * main - Writes 00 - 99
+ * @void: Empty parameter list for main.
+ *
+ * Description: Writes all unique combinations
+ * of 2 numbers
+ *
+ * Return: 0 for success
+*/
 int main(void)
 {
 	int i, j;
 
-	i = 48;
-	j = 48;
-
-	while (j < 58)
+	for (i = '0'; i <= '9'; i++)
 	{
-		i = 48;
-		while (i < 58)
+		for (j = '0'; j <= '9'; j++)
 		{
-			if (j != i && j < i)
+			if ((i < j) & (j <= '9'))
 			{
-				putchar(j);
 				putchar(i);
-				if (i == 57 && j == 56)
+				putchar(j);
+				if ((j < '9') | (i < '8'))
 				{
-					break;
+					putchar(',');
+					putchar(' ');
 				}
-				putchar(',');
-				putchar(' ');
 			}
-			i++;
 		}
-		j++;
 	}
 	putchar('\n');
 	return (0);
