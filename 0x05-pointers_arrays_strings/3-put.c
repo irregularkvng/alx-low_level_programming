@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * _puts - prints a string to the stdout
- *
- * @str: the string to be printed
+ * _puts - print a string to the stdout
+ * @str: the string
  * Return: the length of the string
  */
 
