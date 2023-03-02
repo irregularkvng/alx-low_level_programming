@@ -4,7 +4,7 @@
 #include "main.h"
 
 /*
-* *_strcat - the function that concats two strings
+* *_strcat - the function that concats two strings @dest and @src
 * @s1: destination string
 * @s2: source string
 * Return: destination string
@@ -13,28 +13,12 @@
 
 char *_strcat(char *dest, char *src)
 {
-	char *ptr = dest;
-		while (*ptr != '\0') 
-		{
-			ptr++;
-		}
-    		while (*src != '\0') {
-        *ptr = *src;
-        ptr++;
-        src++;
-    }
-    *ptr = '\0';
-    return dest;
+	int str1 = 0;
+	int str2 = 0;
+
+	while (dest[str1++])
+		str2++;
+	for (str1 = 0; src[str1]; str1++)
+		dest[str2++] = src[str1];
+	return (dest);
 }
-
-
-int main() {
-    char s1[100] = "Hello, ";
-    char s2[] = "world!";
-    
-    *_strcat(s1, s2);
-    
-    printf("Concatenated string: %s", s1);
-    return 0;
-}
-
