@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # 0x0 D.C - Preprocessor
+=======
+# 0x0D.C - Preprocessor
+>>>>>>> eb90e7dbfe9183d47f813ec0b3cc9809eaa64fcf
 
 ## Tasks in the preprocessor project
 
