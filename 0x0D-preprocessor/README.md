@@ -1,4 +1,4 @@
-#0x0 D. C - Preprocessor
+# 0x0 D.C - Preprocessor
 
 ## Tasks in the preprocessor project
 
